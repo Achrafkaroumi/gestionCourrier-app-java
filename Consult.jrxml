@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Consult" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="07cee827-be23-4462-a19d-117cf500fb1e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="73"/>
+	<parameter name="numero" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from courrier_entrant c,listecourrent l
+where c.numero=l.numero and c.numero=$P{numero}]]>
+	</queryString>
+	<field name="Numero" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nature_document" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Expediteur" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Objet" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Date_reception" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Destinataire" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Instruction" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Date_traitement" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<pageHeader>
+		<band height="102" splitType="Stretch">
+			<staticText>
+				<reportElement x="174" y="28" width="354" height="35" uuid="48338b70-5e96-499e-bce5-0215bf89cc67"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ecole Nationale D'Architecture RABAT Report]]></text>
+			</staticText>
+			<image>
+				<reportElement x="15" y="0" width="130" height="100" uuid="73336f9b-e902-4a5b-bf62-9cd3006f9538"/>
+				<imageExpression><![CDATA["C:\\Users\\pc expert\\Desktop\\Projet Stage\\Gestion Courrier\\ena.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="645" splitType="Stretch">
+			<staticText>
+				<reportElement x="305" y="23" width="100" height="20" uuid="b94d40b9-94ef-445e-a6b8-4504f5c97cea"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="22" width="100" height="20" uuid="28634db3-c68a-4099-84a3-d09da701e9bb"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[N° d'ordre :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="111" width="311" height="23" uuid="178d5d4f-edd1-4a3b-9d7e-1b73e8b46b49"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="263" width="311" height="23" uuid="2b428e0b-7e08-4a82-92f0-b8cc43bfb8c9"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="68" width="311" height="23" uuid="1a3a3c8c-bd80-4fa4-82d5-be914d3c66bd"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="225" width="311" height="23" uuid="617d141d-d8cf-458c-9f38-4b36dfeb9fe0"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="186" width="311" height="23" uuid="c273253a-34af-44e8-965b-fad7c527727d"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="150" width="311" height="23" uuid="022fb220-1b7d-4c6a-babe-b9b4e0acbf13"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="71" width="294" height="20" uuid="edaca646-5a25-47dd-9eeb-fc2ddb81ca76"/>
+				<textElement>
+					<font size="11" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Secrétariat Général]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="114" width="278" height="20" uuid="46070e43-5af8-4120-9759-04d8eb8f1c61"/>
+				<textElement>
+					<font size="11" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Direction Adjointe chargée des affaires Pédagogiques]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="153" width="278" height="20" uuid="1ad4c695-0f19-44b3-8c50-549224e10cb8"/>
+				<textElement>
+					<font size="11" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Direction Adjointes chargée de la Recherche]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="189" width="278" height="20" uuid="fd89eedd-66b0-4de1-bdd4-2caa5cfa0646"/>
+				<textElement>
+					<font size="11" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Direction Adjointes chargée de la Formation Continue]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="225" width="278" height="20" uuid="bf75277d-5ce8-4c71-a475-8b896fbaaee6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Association Ikhaa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="266" width="100" height="20" uuid="aef2d191-c1a2-48a4-8c25-fd78fc3f5bcb"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[C.E.E.N.A]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="109" width="49" height="23" uuid="45583fe1-70c7-48d8-b876-55353c1bba1a"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="145" width="49" height="23" uuid="e1738352-99ac-4c75-ba93-9880711bae9f"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="220" width="49" height="23" uuid="ee59b3cc-f834-47bc-80c3-1be97d94e9aa"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="258" width="49" height="23" uuid="eecd7d23-f39c-4b90-8dc8-948ca540f9ab"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="71" width="49" height="23" uuid="ee93149e-4a7f-466b-9dbe-8433550617bc"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="184" width="49" height="23" uuid="4f22217a-6925-4cb8-af94-96320ba77d5d"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="28" y="335" width="500" height="40" uuid="eb2ece1d-99c4-44a7-a9b6-125f31b028ee"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="163" y="335" width="211" height="40" uuid="790dc73c-2983-4110-b54e-e43c864d90de"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Instruction de M.le directeur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="75" y="394" width="384" height="92" uuid="02db482e-87e0-49fd-a14b-6bf0e60a0205"/>
+				<box>
+					<pen lineWidth="0.75" lineStyle="Dashed"/>
+					<topPen lineWidth="0.75" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.75" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.75" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.75" lineStyle="Dashed"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="106" y="424" width="39" height="32" uuid="a81d2f4a-4741-48b6-ace0-071097adc6cc"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Etat :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="424" width="29" height="32" uuid="a12ac6b8-0fa1-4bef-9751-207c9d7c816e"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Le :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="527" width="151" height="20" uuid="9a24bee7-5fdb-4cae-bc1b-4609579922b4"/>
+				<textElement>
+					<font size="11" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Signature de M.le directeur]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="114" y="22" width="100" height="20" uuid="01bf5ee2-d91c-4424-9994-12f7abe1ae5d"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Numero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="344" y="22" width="124" height="20" uuid="e649afea-09eb-4d99-8237-0d59179cddbb"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Date_reception}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="145" y="424" width="145" height="20" uuid="c1307607-4e07-4dab-8d66-75c594cda5d6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Instruction}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="305" y="424" width="172" height="20" uuid="693f2adc-6cd5-45d7-a4a2-95bbb0e99fa7"/>
+				<textElement verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
